@@ -3,8 +3,14 @@
   "notes": "My awesome keymap",
   "documentation": "\"This file is a QMK Configurator export. You can import this at <https://config.qmk.fm>. It can also be used directly with QMK's source code.\n\nTo setup your QMK environment check out the tutorial: <https://docs.qmk.fm/#/newbs>\n\nYou can convert this file to a keymap.c using this command: `qmk json2c {keymap}`\n\nYou can compile this keymap using this command: `qmk compile {keymap}`\"\n",
   "keyboard": "preonic/rev3_drop",
+  "host_language": "us_international",
   "keymap": "preonic_rev3_drop_layout_preonic_1x2uc_mine",
   "layout": "LAYOUT_preonic_1x2uC",
+  "macros": [
+    [
+      {"action": "tap", "keycodes": ["QUOT", "SPC"]}
+    ]
+  ],
   "layers": [
     [
       "QK_GESC",
@@ -56,10 +62,10 @@
       "KC_UP",
       "KC_DEL",
       "KC_LCTL",
-      "LALT(KC_LSFT)",
       "KC_LGUI",
       "KC_LALT",
-      "ANY(LT(1, KC_QUOT(KC_SPC)))",
+      "MACRO_0",
+      "LT(1,KC_QUOT)",
       "KC_SPC",
       "LT(2,KC_SCLN)",
       "KC_SLSH",
